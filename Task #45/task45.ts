@@ -10,10 +10,11 @@ function car_info(m_name:string, manufacturer:string, ...option: any)
 {
     const car = {
         modelName : m_name,
-        manufacturer : manufacturer
+        manufacturer : manufacturer,
+        options : option
     }
     
     return car;
 }
 
-console.log("Toyota", "camry", "color", "red", "year", "2022");
+console.log(car_info("Toyota", "Camry", "Color", "red", "year", "2022"));
